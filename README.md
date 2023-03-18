@@ -2,6 +2,7 @@
 <p>This is the frontend part of a tour and travel agency website.</p> <br/>
 
 <a style="font-size:18px" href="https://travelpointbyadnan.netlify.app/" target="_blank" rel="noreferrer">Live Demo</a>
+<p>N.B. The videos in the home section of the website might take some time to get fully loaded in the live demo.</p>
 
 <br/>
 <h2>Tools & Technologies Used:</h2>
