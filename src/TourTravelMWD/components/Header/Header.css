@@ -1,0 +1,208 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8888800;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--white);
+}
+
+header .logo span {
+  color: var(--yellow);
+}
+
+header .navbar {
+  display: block;
+}
+
+header .navbar a {
+  color: var(--white);
+  font-size: 2rem;
+  margin: 0 0.8rem;
+}
+
+header .navbar a:hover {
+  color: var(--yellow);
+}
+
+header .icons i {
+  font-size: 2.5rem;
+  color: var(--white);
+  cursor: pointer;
+  margin-right: 1.8rem;
+}
+
+header .icons i:hover {
+  color: var(--yellow);
+}
+
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background-color: var(--blue);
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 105;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: var(--blue);
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+}
+
+header .search-bar-container label {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+  color: var(--yellow);
+}
+
+.login-form-container {
+  position: fixed;
+  top: -120%;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.705);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form-container.active {
+  top: 0;
+  z-index: 555555;
+}
+.login-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  width: 50rem;
+  position: relative;
+}
+
+.login-form-container form h3 {
+  font-size: 3rem;
+  color: var(--blue);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.login-form-container form .box {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: var(--dark);
+  margin: 0.6rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+}
+
+.login-form-container form .box:focus {
+  border-color: var(--yellow);
+}
+
+.login-form-container form #remember {
+  margin: 2rem 0;
+}
+
+.login-form-container form label {
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+}
+
+.login-form-container form p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+.login-form-container form p a {
+  color: var(--yellow);
+}
+
+.login-form-container form p a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.login-form-container .close-form {
+  position: absolute;
+  top: -2.8rem;
+  right: -1.5rem;
+  padding: 1rem 1.8rem;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: var(--yellow);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.menu-bar {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.sidebarItem {
+  width: 80%;
+  display: block;
+  font-size: 1.8rem;
+  margin: 1.7rem auto;
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(253, 161, 23, 0.719);
+  border-radius: 3rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.sideBar {
+  display: none;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  background-color: var(--white);
+  margin-top: 7.83rem;
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  header .navbar {
+    display: none;
+  }
+}
